@@ -1,0 +1,131 @@
+.contactCard {
+  z-index: 3;
+  top: 23%;
+  left: 28%;
+  position: absolute;
+  height: 60%;
+  width: 37%;
+  background-color: #161414;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+
+  transform: scale(1.3);
+}
+.contactCard h1 {
+  text-align: center;
+  color: white;
+  margin: 30px;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.contactCard .input {
+  width: 90%;
+  margin: 9% 4%;
+  background: none;
+  border: none;
+  display: block;
+  border-bottom: 2px solid rgb(143, 137, 137);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-right: 200px;
+  color: white;
+}
+
+.contactCard .input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-style: normal;
+  color: rgb(190, 189, 189);
+}
+
+.contactCard .input:focus {
+  outline: none;
+}
+.contactCard .input:focus::placeholder {
+  color: transparent;
+}
+.div {
+  display: grid;
+  place-content: center;
+}
+.submit {
+  padding: 5px 10px;
+
+  color: rgb(214, 208, 208);
+  background: none;
+  border: 2px solid rgb(211, 208, 208);
+
+  border-radius: 25px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  word-spacing: 3px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 450px) {
+  .contactCard {
+    z-index: 3;
+    top: 33%;
+    left: 15%;
+    position: absolute;
+    height: 32%;
+    width: 70%;
+    background-color: #161414;
+    border-radius: 25px;
+    margin: auto;
+    /* visibility: hidden; */
+    transition: 3s ease-in-out;
+    transform: scale(1.3);
+  }
+
+  .contactCard h1 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .contactCard .input {
+    width: 90%;
+    margin: 7% auto;
+    background: none;
+    border: none;
+    display: block;
+    border-bottom: 0.7px solid rgb(143, 137, 137);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: white;
+  }
+
+  .contactCard .input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+
+    color: rgb(190, 189, 189);
+  }
+
+  .submit {
+    color: rgb(214, 208, 208);
+    background: none;
+    border: 1px solid rgb(211, 208, 208);
+
+    border-radius: 15px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    word-spacing: 3px;
+    font-size: 0.7em;
+    margin: 15px;
+  }
+}
